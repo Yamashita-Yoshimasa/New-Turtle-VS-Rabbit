@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/**
+ *   Founsdation
+ * ======================== */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* breakpoints */
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* 変数の定義 */
+/*base_color*/
+/*device*/
+/**
+ *   Laysout
+ * ======================== */
+.l-field {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.l-hp {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-start {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.l-winner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+/**
+ *   Object1
+ * ======================= */
+/* Conponent -------------- */
+/* Project -------------- */
+.p-field {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.p-field__wrapper {
+  height: 20rem;
+  position: relative;
+}
+
+.p-field__character-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.p-field__character-box.-turtle {
+  bottom: 0;
+  left: 0;
+}
+
+.p-field__character-box.-rabbit {
+  top: 0;
+  right: 0;
+}
+
+.p-field__character {
+  height: 10rem;
+}
+
+.p-field__character.-rabbit {
+  height: 8rem;
+}
+
+.p-field__button {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 4px;
+  margin-left: 1rem;
+  padding: 0.25em 0.5em;
+  position: relative;
+  width: 5rem;
+}
+
+.p-field__button.-view {
+  background: #00BCD4;
+  /*背景色*/
+  color: #fff;
+  /*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+  border-bottom: solid 2px #118e9e;
+  font-weight: bold;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+.p-hp__box {
+  border: .05rem solid black;
+  width: 5.15rem;
+}
+
+.p-hp__bar {
+  height: 0.5em;
+  width: 5rem;
+}
+
+.p-hp__bar.-view {
+  background-color: greenyellow;
+}
+
+.p-start__title.-view {
+  font-size: 3rem;
+}
+
+.p-start__button {
+  -webkit-appearance: none;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.25em 0.5em;
+  position: relative;
+}
+
+.p-start__button.-view {
+  color: #FFF;
+  background: #fd9535;
+  /*背景色*/
+  border-bottom: solid 2px #d27d00;
+  /*少し濃い目の色に*/
+  border-radius: 4px;
+  /*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+.p-start__button:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.p-start__link {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.p-winner {
+  text-align: center;
+}
+
+.p-winner__text.-view {
+  font-size: 2rem;
+}
+
+/* Utillity -------------- */
